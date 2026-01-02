@@ -1,0 +1,10 @@
+[package]
+name = "psa-kb-switcher"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+# Обязательно включаем фичу "xkb"
+x11rb = { version = "0.13", features = ["xkb"] }
+image = "0.24"
+ab_glyph = "0.2"
