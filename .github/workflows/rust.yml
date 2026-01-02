@@ -27,4 +27,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: rust-release-build
-          path: target/release/
+          path: target/release/psa-kb-switcher
