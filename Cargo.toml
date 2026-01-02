@@ -8,3 +8,10 @@ edition = "2021"
 x11rb = { version = "0.13", features = ["xkb"] }
 image = "0.24"
 ab_glyph = "0.2"
+
+[profile.release]
+lto = true
+panic = "abort"
+opt-level = "z"
+codegen-units = 1
+strip = true
